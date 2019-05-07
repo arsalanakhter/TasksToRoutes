@@ -2,6 +2,11 @@
 #include <cmath>
 class Saving
 {
+/*! \brief Saving class
+ *
+ *  Computes Savings for ClarkWright Algorithm (Not implemented yet).
+ */
+
 private:
     double mSaving;
     int mFrom;

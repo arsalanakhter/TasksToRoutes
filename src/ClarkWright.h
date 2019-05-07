@@ -11,6 +11,11 @@
 #include "RoutingModel.h"
 class ClarkWright
 {
+/*! \brief Implementation for Clark Wright Algorithm TBD here. 
+ *
+ *  (Not implemented yet).
+ */
+
 private:
     std::map<int, bool> mVisited;
     int mDepotNode;

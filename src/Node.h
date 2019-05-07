@@ -6,15 +6,19 @@
 #include <map>
 class Node
 {
+/*! \brief Basic Node
+ *
+ *  Holds variables for different properties of a node in a routing model.
+ */
 private:
-    int mIndex;                                   // Index of the Node
-    int mRouteIndex;                              // Index of Route, of which the node is part of
-    int mRoutePosition;                           // Position of node in Route
-    double mX;                                    // X Coordintaes of node
-    double mY;                                    // Y Coordinates of node
-    bool mDepot;                                  // 1 if the node is a depot (not implemented yet)
-    int mDemand;                                  // Demand at this node
-    std::map<int, double> mDistancesToOtherNodes; // Distance of this node to otehr nodes
+    int mIndex;                                   //!< Index of the Node
+    int mRouteIndex;                              //!< Index of Route, of which the node is part of
+    int mRoutePosition;                           //!< Position of node in Route
+    double mX;                                    //!< X Coordintaes of node
+    double mY;                                    //!< Y Coordinates of node
+    bool mDepot;                                  //!< 1 if the node is a depot (not implemented yet)
+    int mDemand;                                  //!< Demand at this node
+    std::map<int, double> mDistancesToOtherNodes; //!< Distance of this node to otehr nodes
                                                   // std::map<int, double> mDistancesForCW;
                                                   // std::map<int, int> m_penalities;
                                                   // std::map<int, InsertionCost> mInsertNextTo;
@@ -39,6 +43,6 @@ public:
     void setRoutePosition(int p);
     std::map<int, double> &getDistancesToOtherNodes();
     void setDepot();
-    bool checkDepot() const; // Return if a node is a depot node or not
+    bool checkDepot() const; //!< Return if a node is a depot node or not
 };
 #endif

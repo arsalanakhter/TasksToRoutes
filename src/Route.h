@@ -10,13 +10,17 @@
 
 class Route
 {
+/*! \brief Basic Route class
+ *
+ *  A route made of nodes, along with variables defining other properties of node.
+ */
 private:
     std::vector<Node> mNodes;
     int mLength;
     int mLoad;
-    double mCost;  // Cost of the whole route
-    int mDepot;    // Index of Depot node
-    int mCapacity; // Capacity of the whole route
+    double mCost;  //<! Cost of the whole route
+    int mDepot;    //<! Index of Depot node
+    int mCapacity; //<! Capacity of the whole route
 public:
     Route();
     std::vector<Node> &getNodesOfRoute();

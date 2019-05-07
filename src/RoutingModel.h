@@ -13,15 +13,20 @@
 
 class RoutingModel
 {
+/*! \brief Basic RoutingModel class
+ *
+ *  Holds the complete routing model, which contains nodes and routes.
+ */
+
 private:
-    int mCustomers;   // No of customers in the model
-    int mVertices;    // Total number of nodes in the model
-    int mMaxCapacity; // maximum Capacity for each route
-    int mNoOfRoutes;  // number of routes in the model
+    int mCustomers;   //!< No of customers in the model
+    int mVertices;    //!< Total number of nodes in the model
+    int mMaxCapacity; //!< maximum Capacity for each route
+    int mNoOfRoutes;  //!< number of routes in the model
     //int mCapacityLimitVehicles;
-    double mMaxTourLength;      // max Tour Length for the model
-    std::vector<Node> mNodes;   // vector of nodes in the model
-    std::vector<Route> mRoutes; // vector of routes in the model
+    double mMaxTourLength;      //!< max Tour Length for the model
+    std::vector<Node> mNodes;   //!< vector of nodes in the model
+    std::vector<Route> mRoutes; //!< vector of routes in the model
     template <typename T>
     void erase(std::vector<T> &vector, T const &value)
     {
